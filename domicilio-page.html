@@ -48,26 +48,16 @@
           <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
         </div>
         <div class="languages d-none d-md-flex align-items-center">
-          <ul>
-            <li>En</li>
-            <li><a href="#">De</a></li>
-          </ul>
+          
         </div>
       </div>
     </div><!-- End Top Bar -->
 
-    <div class="branding d-flex align-items-cente">
+    <nav id="navmenu" class="navmenu">
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+   
 
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">Perla Caribe</h1>
-        </a>
-
-        <nav id="navmenu" class="navmenu">
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
 
   </header>
 
@@ -87,10 +77,10 @@
     </div><!-- End Page Title -->
 
     <!-- Domicilio Section -->
-     <section>
+     <section id = "domicilio" class = " domicilio-Section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+        <form action="forms\servicio_domicilio.js" method="post" role="form" class="js-email-form">
           <div class="row gy-4">
             <div class="col-lg-4 col-md-6">
               <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required="">
@@ -102,7 +92,7 @@
               <input type="text" class="form-control" name="phone" id="phone" placeholder="Teléfono" required="">
             </div>
             <div class="col-lg-4 col-md-6">
-              <input type="text" name="date" class="form-control" id="place" placeholder="Dirección" required="">
+              <input type="direction" name="date" class="form-control" id="place" placeholder="Dirección" required="">
             </div>
             <div class="col-lg-4 col-md-6">
               <input type="time" class="form-control" name="time" id="time" placeholder="Hora" required="">
@@ -111,11 +101,16 @@
 
       <!-- AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII EL PEDIDO -->
           <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="PEDIDO"></textarea>
-            <div>
+            <section id = "pedido" class="form-control">
               
-            </div class="Contador_Pedido">
-          </div>
+                <div class = "Pedido-Control">
+                  <button type = "submit">+</button>
+                </div>
+              
+
+
+            </section>
+
   
           <div class="text-center mt-3">
             <div class="loading">Cargando</div>

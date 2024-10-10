@@ -1422,7 +1422,16 @@ section,
   color: var(--default-color);
   background-color: color-mix(in srgb, var(--background-color), transparent 20%);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  
 }
+
+.book-a-table .php-email-form input[type=date]::-webkit-calendar-picker-indicator {
+  filter: invert(50%) sepia(1%) saturate(51%) hue-rotate(180deg); /* Ajusta los valores según el color deseado */
+} 
+
+.book-a-table .php-email-form input[type=time]::-webkit-calendar-picker-indicator {
+  filter: invert(50%) sepia(1%) saturate(51%) hue-rotate(180deg); /* Ajusta los valores según el color deseado */
+} 
 
 .book-a-table .php-email-form input[type=text]:focus,
 .book-a-table .php-email-form input[type=email]:focus,
@@ -1440,6 +1449,8 @@ section,
 .book-a-table .php-email-form input[type=time]::placeholder,
 .book-a-table .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
+
+
 }
 
 .book-a-table .php-email-form button[type=submit] {
@@ -1727,9 +1738,65 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Starter Section Section
+# Domicilio Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+
+.domicilio-Section .form-control {
+
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: color-mix(in srgb, var(--background-color), transparent 20%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);   
+
+
+}
+.domicilio-Section .row.gy-4 input[type=time]::-webkit-calendar-picker-indicator {
+  filter: invert(50%) sepia(1%) saturate(51%) hue-rotate(180deg); /* Ajusta los valores según el color deseado */
+} 
+
+.domicilio-Section button[type=submit]{ 
+
+  color: var(--default-color);
+  border: 2px solid var(--accent-color);
+  background: transparent;
+  padding: 14px 60px;
+  transition: 0.4s;
+  border-radius: 50px;
 }
 
+.domicilio-Section button[type=submit]:hover{ 
+
+  color: var(--default-color);
+  border: 2px solid var(--accent-color);
+  background:#cda45e;
+  padding: 14px 60px;
+  transition: 0.4s;
+  border-radius: 50px;
+
+}
+
+ .Pedido-Control button[type=submit]{ 
+
+  color: var(--default-color);
+  border: 2px solid var(--accent-color);
+  background: transparent;
+  transition: 0.4s;
+  border-radius: 12px;
+  margin: 6px 6px;
+  padding: 20px 20px;
+  }
+
+  .Pedido-Control button[type=submit]:hover{ 
+
+    color: var(--default-color);
+    border: 2px solid var(--accent-color);
+    background:#cda45e;
+    transition: 0.4s;
+    border-radius: 12px;
+    margin: 6px 6px;
+    padding: 20px 20px;
+    }
+  

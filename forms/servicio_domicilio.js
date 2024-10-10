@@ -4,7 +4,7 @@ event.preventDefault();
 const formData = new FormData(this);
 const formObject = Object.fromEntries(formData.entries());
 
-fetch('/Restaurant-Proyect/index.html#book-a-table', {
+fetch('path/to/your/server/endpoint', {
 method: 'POST',
 headers: {
 'Content-Type': 'application/json'
@@ -16,7 +16,7 @@ body: JSON.stringify(formObject)
 document.getElementById('form-response').innerText = 'Reserva realizada con éxito';
 })
 .catch(error => {
-
-
+document.getElementById('form-response').innerText = 'Hubo un error al realizar la reserva';
+console.error('Error:', error);
 });
 });
