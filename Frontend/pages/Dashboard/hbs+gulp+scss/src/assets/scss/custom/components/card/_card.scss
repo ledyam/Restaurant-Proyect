@@ -1,0 +1,29 @@
+.card {
+    margin-bottom: $grid-gutter-width;
+	background:rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(42px);
+    .card-header {
+		border-bottom: 1px solid $border-color;
+		margin: 0 1.5rem;
+		.header-title {
+			.card-title {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&.card-white{
+		background: $white;
+	}
+	&.card-primary{
+		background: $primary;
+	}
+}
+.card-header {
+    .card-title {
+        margin-bottom: 0;
+    }
+}
+.heading-title{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}

@@ -1,0 +1,19 @@
+.menu-card{
+    position: relative;
+    &::after{
+        border-right: 6px solid;
+        position: absolute;
+        content: "";
+        height: 76px;
+        border-radius: 10px 0px 0px 10px;
+        right: 0px;
+        top: 38px;
+    }
+
+}
+
+.iq-fetch{
+    .iq-fetch-details{
+        margin: 0 8px 8px 0;
+    }
+}

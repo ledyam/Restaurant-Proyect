@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Obtener los platillos desde el backend
-    fetch('http://localhost:8000/menu/')
+    fetch('http://localhost:8000/menu')
         .then(response => response.json())
         .then(data => {
             console.log('Platillos obtenidos:', data);

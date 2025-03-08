@@ -1,0 +1,98 @@
+.card-wiget-list {
+	.card-progress {
+		.circle-progress {
+            width: 3rem;
+            height: 3rem;
+
+            div {
+                position: absolute;
+                width: 3.125rem;
+                text-align: center;
+                height: 3.125rem;
+                display: flex;
+                place-content: center;
+                align-items: center;
+            }
+            .circle-progress-text {
+                display: none;
+            }
+		}
+	}
+}
+.category-menu {
+    transition: all 400ms ease;
+    // opacity: 70%;
+    .heading-title {
+        position: relative;
+        transition: all 400ms ease;
+        &::before {
+            content: "";
+            border-bottom: 1px solid $primary;
+            width: 32px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0%;
+            margin: 0 auto;
+            text-align: center;
+            transition: all 400ms ease;
+        }
+    }
+    .iq-menu-category{
+        svg{
+            rect{
+                fill: $primary;
+            }
+            path{
+                stroke: $white;
+            }
+        }
+    }
+    &:hover {
+        background-color:  rgba($primary,0.7);
+        cursor: pointer;
+        .heading-title {
+            color: $white;
+            &::before {
+                border-color: $white;
+                width: 100%;
+            }
+        }
+        .iq-menu-category{
+            svg{
+                rect{
+                    fill: $white;
+                }
+                path{
+                    stroke: $primary;
+                }
+                transition: 3s;
+            }
+        }
+    }
+    &.active {
+        background-color: rgba($primary,0.7);
+        .heading-title {
+            color: $white;
+            &::before {
+                border-color: $white;
+                width: 100%;
+            }
+        }
+    }
+}
+.iq-calories {
+    position: relative;
+    transition: all 400ms ease;
+    &::before {
+        content: "";
+        border-bottom: 1px solid $border-color;
+        width: 32px;
+        position: absolute;
+        left: 0;
+        bottom: 12px;
+        margin: 0 auto;
+        text-align: center;
+        transition: all 400ms ease;
+    }
+}

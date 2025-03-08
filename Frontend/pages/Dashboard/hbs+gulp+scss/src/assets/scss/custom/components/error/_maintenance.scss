@@ -1,0 +1,86 @@
+.iq-maintenance {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    img {
+        max-height: 350px;
+    }
+    .maintenance-bottom {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+
+        .search-input {
+            input {
+                &.form-control {
+                    background: transparent;
+                    border-radius: 50rem !important;
+                }
+            }
+        }
+        .bottom-text{
+            position: absolute;
+            left:0;
+            right:0;
+            bottom: 40px;
+           
+        }
+    }
+}
+.cookie-1{
+    width: 28%;
+}
+.nine-img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 50%;
+    left: 0;
+    top: -600px;
+    transition: transform .5s ease-out;
+    transform: scale(1.2);
+}
+.ten-img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 82%;
+    top: -285px;
+    transition: transform .5s ease-out;
+    transform: scale(1.2);
+}
+.eleven-img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 62%;
+    top: -185px;
+    transition: transform .5s ease-out;
+    transform: scale(1.2);
+}
+.twelve-img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 40%;
+    top: -260px;
+    transition: transform .5s ease-out;
+    transform: scale(1.2);
+}
+.thirteen-img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 15%;
+    top: -400px;
+    transition: transform .5s ease-out;
+}
+.fifteen-img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: -21px;
+    top: -140px;
+    transition: transform .5s ease-out;
+    transform: scale(1.2);
+}

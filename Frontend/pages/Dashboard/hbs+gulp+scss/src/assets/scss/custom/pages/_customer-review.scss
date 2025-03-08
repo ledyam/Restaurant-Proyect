@@ -1,0 +1,28 @@
+.iq-content1{
+    position: absolute;
+    width: 88%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(42px);
+    color: $black;
+}
+.profile-img54{
+  margin-top: 8%;
+}
+@include media-breakpoint-down(lg) { 
+  .iq-content1 {
+    transform: translateY(70px);
+  }
+  .profile-img54 {
+    margin-top: 15%;
+  }
+}
+@include media-breakpoint-down(sm) {
+    .iq-content1 {
+      display: none;
+    }
+  }
+  
+

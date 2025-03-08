@@ -1,0 +1,201 @@
+.dish-card-horizontal{
+   .dish-card{
+      margin-top: 80px;
+   }
+}
+
+.dish-card-vertical{
+   .dish-card2{
+      margin-right: 50px;
+   }
+}
+
+.dish-card-vertical1{
+   .dish-card3{
+      margin-right: 140px;
+   }
+}
+
+.dish-card{
+   transition: all 400ms ease;
+   .menu-image{
+      margin-top: 85px;
+   }
+   svg{
+      .circle-2, .circle-3{
+          fill: $white;
+      }
+      .circle-1{
+          fill: $primary;
+      }
+   }
+   &.active{
+      background-color:  rgba(234,106,18,0.7);
+           .heading-title {
+               color: $white;
+            }
+            .menu-image{
+               .stars-ratings{
+                  svg{
+                     color: $white;
+                  }
+               }
+            }
+            svg{
+               .circle-2, .circle-3{
+                  fill: $primary;
+               }
+               .circle-1{
+                  fill: $white;
+               }
+            }
+              span{
+                 color: $white !important;
+              }
+              small{
+                 color: $white;
+              }
+   }
+   &:hover{
+      background-color:  rgba(234,106,18,0.7);
+      color: $white;
+      cursor: pointer;
+      h2{
+         color: $white;
+      }
+      .menu-image{
+         .stars-ratings{
+            svg{
+               color: $white;
+            }
+         }
+      }
+      .heading-title {
+          color: $white;
+       }
+          svg{
+             .circle-2, .circle-3{
+                 fill: $primary;
+             }
+             .circle-1{
+                 fill: $white;
+             }
+         }
+         span{
+            color: $white !important;
+         }
+         small{
+            color: $white;
+         }
+
+   }
+}
+.menu-image{
+   .stars-ratings{
+      svg{
+         color: $primary;
+      }
+   }
+}
+
+.dish-card2{
+   transition: all 400ms ease;
+   svg{
+      .circle-2, .circle-3{
+          fill: $white;
+      }
+      .circle-1{
+          fill: $primary;
+      }
+  }
+   &.active{
+      background-color:  rgba(234,106,18,0.7);
+           .heading-title {
+               color: $white;
+            }
+               svg{
+                  .circle-2, .circle-3{
+                     fill: $primary;
+                  }
+                  .circle-1{
+                     fill: $white;
+                  }
+            }
+              span{
+                 color: $white !important;
+              }
+              small{
+                 color: $white;
+              }
+              p{
+                 color: $white;
+              }
+}
+   &:hover{
+      background-color:  rgba(234,106,18,0.7);
+      cursor: pointer;
+      .heading-title {
+          color: $white;
+       }
+       p{
+         color: $white;
+      }
+          svg{
+             .circle-2, .circle-3{
+                 fill: $primary;
+             }
+             .circle-1{
+                 fill: $white;
+             }
+         }
+         span{
+            color: $white !important;
+         }
+         small{
+            color: $white;
+         }
+
+   }
+
+}
+
+.cusomer-card {
+   &.active{
+      background-color:  rgba(234,106,18,0.7);
+           h6{
+               color: $white;
+            }
+              span{
+                 color: $white !important;
+              }
+              small{
+                 color: $white !important;
+              }
+}
+   &:hover{
+      background-color:  rgba(234,106,18,0.7);
+      h6{
+         color: $white;
+      }
+        span{
+           color: $white !important;
+        }
+        small{
+           color: $white !important;
+        }
+   }
+}
+@include media-breakpoint-down(lg) { 
+   .dish-card-vertical1{
+      .dish-card3{
+         margin-right: 0;
+      }
+   }
+} 
+@include media-breakpoint-down(md) { 
+   .dish-card-horizontal{
+      .dish-card {
+         margin-top: 100px;
+      }
+   }
+}

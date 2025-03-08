@@ -1,0 +1,54 @@
+{{!-- layouts/layout.hbs --}}
+
+<!doctype html>
+<html lang="en" dir="{{#compare dir '==' 'true'}}rtl{{else}}ltr{{/compare}}">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>{{ appName }} | Restaurant Management Admin Template</title>
+      {{> partials/dashboard/head }}
+      {{#block "head"}}
+        {{!-- External page head section--}}
+      {{/block}}
+  </head>
+  <body class=" {{bodyClass}} {{#compare dark '===' 'true'}} dark {{/compare}}"  style="background:url({{path}}assets/images/dashboard.png);    background-attachment: fixed;
+    background-size: cover;">
+    <!-- loader Start -->
+    <div id="loading">
+      {{> partials/dashboard/loader }}
+    </div>
+    <!-- loader END -->
+    <div class="position-relative">
+      <div class="user-img1">
+          <svg width="1857"  viewBox="0 0 1857 327" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.05078 189.348C86.8841 109.514 348.951 -25.2523 734.551 74.3477C1120.15 173.948 1641.22 91.181 1853.55 37.3477" stroke="#EA6A12" stroke-opacity="0.3"/>
+          <path d="M0.99839 152.331C90.9502 80.6133 364.495 -28.9952 739.062 106.31C1113.63 241.616 1640.16 208.056 1856.6 174.363" stroke="#EA6A12" stroke-opacity="0.3"/>
+          </svg>
+      </div>
+    </div>
+    {{> partials/dashboard/sidebar }}
+    
+    <main class="main-content">
+      <div class="position-relative">
+        <!--Nav Start-->
+        {{> partials/dashboard/header }}
+          <!-- Nav Header Component Start -->
+          {{!-- {{> partials/dashboard/sub-header }} --}}
+          <!-- Nav Header Component End -->
+        <!--Nav End-->
+      </div>
+      <div class="content-inner mt-5 py-0">
+        {{#block "content"}}
+        {{/block}}
+      </div>
+      {{> partials/dashboard/footer }}
+    </main>
+    <!-- Wrapper End-->
+    <!-- offcanvas start -->
+    {{!-- {{> partials/components/setting-offcanvas }} --}}
+
+    {{> partials/dashboard/scripts }}
+    {{#block "scripts"}}
+    {{/block}}
+  </body>
+</html>

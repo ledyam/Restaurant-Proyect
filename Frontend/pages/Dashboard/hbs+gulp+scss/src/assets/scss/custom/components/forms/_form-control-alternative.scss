@@ -1,0 +1,59 @@
+.form-group{
+    margin-bottom: $spacer;
+    .input-group-text {
+        color: $gray-500;
+    }
+}
+.form-group-alt{
+    &.input-group{
+        box-shadow: unset;
+        border-radius: $border-radius;
+        .input-group-text{
+            color: $gray-500;
+        }
+        > :not(:first-child):not(.dropdown-menu){
+            box-shadow: unset;
+            &.input-group-text {
+                border: 0;
+                padding-left: 0;
+            }
+        }
+        > :not(:last-child):not(.dropdown-menu){
+            box-shadow: unset;
+            padding-right: 0;
+            &.input-group-text {
+                border: 0;
+            }
+        }
+        &:focus-within {
+             box-shadow: unset;
+        }
+    }
+    .form-control {
+        border: 0;
+        box-shadow: unset;
+        &.is-valid{
+            box-shadow: unset;
+            &:focus{
+                 box-shadow: unset;
+            }
+        }
+        &.is-invalid{
+            box-shadow: unset;
+            &:focus{
+                 box-shadow: unset;
+            }
+        }
+        &:focus{
+             box-shadow: unset;
+        }
+    }
+}
+
+.form-select{
+    box-shadow: none;
+    &:focus{
+
+        box-shadow: none;
+    }
+}

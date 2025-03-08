@@ -1,0 +1,23 @@
+/*
+ * Background color 
+ */
+ @each $color, $value in $theme-colors{
+    @include bg-variant(".bg-soft-#{$color}", $value);
+}
+
+// Blur Shadow
+.blur-shadow {
+    @include blur-shadow-effect(20px);
+    &.position-bottom{
+        transform: scale(.85) translateY(4px) !important;
+    }
+    &.position-top{
+        transform: scale(.85) translateY(-4px) !important;
+    }
+    &.position-start {
+        transform: scale(.75) translateX(-12px) !important;
+    }
+    &.position-end {
+        transform: scale(.85) translateX(4px) !important;
+    }
+}

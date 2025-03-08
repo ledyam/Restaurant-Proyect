@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACG,qBADkB,CAClB,UAAU,CAAA;EACP,UAAU,EAAE,IAAI;CAClB;;AAGJ,AACG,mBADgB,CAChB,WAAW,CAAA;EACR,YAAY,EAAE,IAAI;CACpB;;AAGJ,AACG,oBADiB,CACjB,WAAW,CAAA;EACR,YAAY,EAAE,KAAK;CACrB",
+    "sources": [
+        "dish-card.scss"
+    ],
+    "names": [],
+    "file": "dish-card.css"
+}

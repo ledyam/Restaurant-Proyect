@@ -1,0 +1,267 @@
+.logo-img{
+    width: 130px;
+    height: 40px;
+}
+.bagimg{
+    position: relative;
+    height: 130%;
+    width: 130%;
+    bottom: 350px;
+    left: 100px;
+}
+.first-img{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 42%;
+    top: 250px;
+    transition: transform .5s ease-out;
+}
+.hover-img {
+    transform: scale(1.2);
+}
+.hover-img:hover{
+    cursor: pointer;
+    transform: scale(1.4) !important;
+}
+.second-img{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 50%;
+    top: 60px;
+    transition: transform .5s ease-out;
+}
+.third-img{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 30%;
+    top: 20px;
+    transition: transform .5s ease-out;
+}
+.fourth-img{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 13%;
+    top: 390px;
+    transition: transform .5s ease-out;
+}
+.fifth-img{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 13%;
+    top: 20px;
+    transition: transform .5s ease-out;
+}
+.six-img{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 31%;
+    top: 395px;
+    transition: transform .5s ease-out;
+}
+.seventh-img{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 25%;
+    top: 220px;
+    transition: transform .5s ease-out;
+}
+.eight-img{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 6%;
+    top: 220px;
+    transition: transform .5s ease-out;
+}
+.list-group-item {
+    background-color: unset;
+}
+.bg-circle {
+	position: absolute;
+	overflow: hidden;
+	&::before {
+		content: '';
+		position: absolute;
+		height: 512px;
+		width: 512px;
+		background: rgba($primary,0.2);
+		border-radius: 50%;
+		top: 0;
+		right: 0;
+		transform: translate(-47%, -55%) scale(2.7);
+	}
+}
+.bg-circle-login {
+	position: absolute;
+	overflow: hidden;
+	&::before {
+		content: '';
+		position: absolute;
+		height: 512px;
+		width: 512px;
+		background: rgba($primary,0.2);
+		border-radius: 50%;
+		top: 0;
+		right: 0;
+		transform: translate(-33%, -33%) scale(3.6);
+	}
+}
+
+.sign-in-img {
+    position: relative;
+    width: 58%;
+    bottom: -14%;
+    left: 27%;
+}
+@media (min-width: 1400px) {
+    .sign-in-img {
+        position: relative;
+        width: 53%;
+        bottom: -23%;
+        left: 23%;
+    }
+    .bg-circle-login {
+        position: absolute;
+        overflow: hidden;
+        &::before {
+            content: '';
+            position: absolute;
+    transform: translate(9%, -58%) scale(3);
+    }
+    }
+}
+@include media-breakpoint-down(xxl) {
+    .sign-in-img {
+        position: relative;
+        width: 67%;
+        bottom: -23%;
+        left: 19%;
+    }
+    .bg-circle-login {
+        position: absolute;
+        overflow: hidden;
+        &::before {
+            content: '';
+            position: absolute;
+    transform: translate(15%, -73%) scale(3.6);
+    }
+    }
+}
+
+@include media-breakpoint-up(xl) { 
+    .bg-circle {
+        &::before {
+    transform: translate(-14%, -67%) scale(2.9);
+        }
+    }
+
+ }
+
+// @media (min-width: 1200px) {
+//     .bg-circle {
+//         &::before {
+//     transform: translate(16%, -64%) scale(2.9);
+//         }
+//     }
+//     .bg-circle-login {
+//         position: absolute;
+//         overflow: hidden;
+//         &::before {
+//             content: '';
+//             position: absolute;
+//             transform: translate(47%, -86%) scale(3.5);
+//     }
+//     }
+// }
+
+@include media-breakpoint-down(xl) {
+    .bg-circle-login {
+        position: absolute;
+        overflow: hidden;
+        &::before {
+            content: '';
+            position: absolute;
+            transform: translate(62%, -100%) scale(3.5);
+    }
+    }
+    .sign-in-img {
+        position: relative;
+        width: 83%;
+        bottom: -24%;
+        left: -2%;
+    }
+
+    .bg-circle {
+        &::before {
+    transform:translate(9%, -52%) scale(2.5);
+        }
+    }
+.first-img{
+    height: 120px;
+    width: 120px;
+    right: 43%;
+    top: 19%;
+}
+.second-img {
+    height: 120px;
+    width: 120px;
+    right: 55%;
+    top: 76px;
+}
+.third-img {
+    height: 120px;
+    width: 120px;
+    right: 28%;
+    top: 17px;
+}
+.fourth-img {
+    height: 120px;
+    width: 120px;
+    right: 5%;
+    top: 32%;
+}
+.fifth-img {
+    height: 120px;
+    width: 120px;
+    right: 9%;
+    top: 26px;
+}
+.six-img {
+    height: 120px;
+    width: 120px;
+    right: 26%;
+    top: 31%;
+}
+.seventh-img{
+    height: 120px;
+    width: 120px; 
+    right: 24%;
+    top: 16%;
+}
+.eight-img{
+    height: 120px;
+    width: 120px; 
+    right: 6%;
+    top: 15%;
+}
+}
+
+@include media-breakpoint-down(lg) {
+    .bg-circle {
+        &::before {
+            display: none;
+        }
+    }
+    .bg-circle-login {
+        &::before {
+            display: none;
+        }
+    }
+}

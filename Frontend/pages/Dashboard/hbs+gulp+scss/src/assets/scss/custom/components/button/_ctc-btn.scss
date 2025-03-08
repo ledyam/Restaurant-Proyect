@@ -1,0 +1,43 @@
+.ctc-button {
+    .status {
+        display: none;
+        transform-origin: left;
+    }
+    &.checked {
+        animation: move-in-steps 1s ease;
+        &[data-status="complete"] {
+            opacity: 1;
+            .status {
+                display: block;
+                animation: animate-btn-text 1s ease;
+            }
+        }
+        &[data-status="reject"] {
+            opacity: 1;
+            .status {
+                display: block;
+                animation: animate-btn-text 1s ease;
+            }
+        }
+    }
+}
+
+@keyframes animate-btn-text {
+    0% {
+        opacity: 0;
+        transform: scaleX(0%) translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleX(100%) translateX(0%);
+    }
+}
+
+@keyframes move-in-steps {
+    0% {
+      width: 50%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
