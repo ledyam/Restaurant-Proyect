@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (data.exists) {
                     alert("El usuario existe.");
                     // Redirigir al usuario a la página de inicio o dashboard
-                    window.location.href = "http://127.0.0.1:5500/Frontend/pages/Dashboard/html/index.html"; // Cambia esto por la URL deseada
+                    window.location.href = "http://127.0.0.1:5500/Frontend/pages/dashboard-sb-admin/index.html"; // Cambia esto por la URL deseada
                 }
             } else {
                 const error = await response.json();
